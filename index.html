@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="./script.jsS"></script>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://getbootstrap.com/docs/5.0/getting-started/download/" target="_blank"><img src="./imgs/logo.svg" alt="" class="brand-logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#me">Details</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="page-header gradient" id="header">
+    <div class="container pt-3">
+      <div class="row justify-content-center align-items-end">
+        <div class="col-md-5 introduction">
+          <h2><span class="name-header">Website Made by :</span><hr><a href="https://www.google.com/" target="_blank"><span class="name font-italic">Ahmed
+                El-Hindawi</span></a></h2>
+          <p class="header-p text-justify">I'm a mid-level Front-end Developer who is starting his career with the lowest price. I tend to
+            specialize in designing XD projects and coverting it to responsive HTML pages developed with bootstrap and
+            latest web technologies.</p>
+
+
+
+          <div class="popup" onclick="myFunction()"><button type="button" class="btn btn-outline-dark">See
+              Video</button>
+            <span class="popuptext" id="myPopup">You have been tricked, there is no video :)</span>
+          </div>
+
+
+          <a href="#me"> <button type="button" class="btn btn-outline-secondary btn-md">Read more</button>
+          </a>
+        </div>
+        <div class="col-md-5">
+          <img src="./imgs/email_campaign_monochromatic.svg" class="header-img" alt="Header image" class="">
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f4d9e7" fill-opacity="1.2"
+        d="M0,192L80,165.3C160,139,320,85,480,96C640,107,800,181,960,192C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
+  </header>
+  <section class="companies">
+    <div class="container text-center">
+      <h2 class="title">You can find me on :</h2>
+      <div class="row g-5 justify-content-center align-items-center">
+        <div class="col-md-2"><a target="_blank" href="https://www.facebook.com/hiindawi"><img class="logo"
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTY3LjY1NyAxNjcuNjU3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNjcuNjU3IDE2Ny42NTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMwMTAwMDI7IiBkPSJNODMuODI5LDAuMzQ5QzM3LjUzMiwwLjM0OSwwLDM3Ljg4MSwwLDg0LjE3OGMwLDQxLjUyMywzMC4yMjIsNzUuOTExLDY5Ljg0OCw4Mi41N3YtNjUuMDgxSDQ5LjYyNg0KCQl2LTIzLjQyaDIwLjIyMlY2MC45NzhjMC0yMC4wMzcsMTIuMjM4LTMwLjk1NiwzMC4xMTUtMzAuOTU2YzguNTYyLDAsMTUuOTIsMC42MzgsMTguMDU2LDAuOTE5djIwLjk0NGwtMTIuMzk5LDAuMDA2DQoJCWMtOS43MiwwLTExLjU5NCw0LjYxOC0xMS41OTQsMTEuMzk3djE0Ljk0N2gyMy4xOTNsLTMuMDI1LDIzLjQySDk0LjAyNnY2NS42NTNjNDEuNDc2LTUuMDQ4LDczLjYzMS00MC4zMTIsNzMuNjMxLTgzLjE1NA0KCQlDMTY3LjY1NywzNy44ODEsMTMwLjEyNSwwLjM0OSw4My44MjksMC4zNDl6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" /></a>
+        </div>
+        <div class="col-md-2"><a target="_blank" href="https://github.com/devhindo"><img class="logo"
+              src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyIC41Yy02LjYzIDAtMTIgNS4yOC0xMiAxMS43OTIgMCA1LjIxMSAzLjQzOCA5LjYzIDguMjA1IDExLjE4OC42LjExMS44Mi0uMjU0LjgyLS41NjcgMC0uMjgtLjAxLTEuMDIyLS4wMTUtMi4wMDUtMy4zMzguNzExLTQuMDQyLTEuNTgyLTQuMDQyLTEuNTgyLS41NDYtMS4zNjEtMS4zMzUtMS43MjUtMS4zMzUtMS43MjUtMS4wODctLjczMS4wODQtLjcxNi4wODQtLjcxNiAxLjIwNS4wODIgMS44MzggMS4yMTUgMS44MzggMS4yMTUgMS4wNyAxLjgwMyAyLjgwOSAxLjI4MiAzLjQ5NS45ODEuMTA4LS43NjMuNDE3LTEuMjgyLjc2LTEuNTc3LTIuNjY1LS4yOTUtNS40NjYtMS4zMDktNS40NjYtNS44MjcgMC0xLjI4Ny40NjUtMi4zMzkgMS4yMzUtMy4xNjQtLjEzNS0uMjk4LS41NC0xLjQ5Ny4xMDUtMy4xMjEgMCAwIDEuMDA1LS4zMTYgMy4zIDEuMjA5Ljk2LS4yNjIgMS45OC0uMzkyIDMtLjM5OCAxLjAyLjAwNiAyLjA0LjEzNiAzIC4zOTggMi4yOC0xLjUyNSAzLjI4NS0xLjIwOSAzLjI4NS0xLjIwOS42NDUgMS42MjQuMjQgMi44MjMuMTIgMy4xMjEuNzY1LjgyNSAxLjIzIDEuODc3IDEuMjMgMy4xNjQgMCA0LjUzLTIuODA1IDUuNTI3LTUuNDc1IDUuODE3LjQyLjM1NC44MSAxLjA3Ny44MSAyLjE4MiAwIDEuNTc4LS4wMTUgMi44NDYtLjAxNSAzLjIyOSAwIC4zMDkuMjEuNjc4LjgyNS41NiA0LjgwMS0xLjU0OCA4LjIzNi01Ljk3IDguMjM2LTExLjE3MyAwLTYuNTEyLTUuMzczLTExLjc5Mi0xMi0xMS43OTJ6Ii8+PC9zdmc+" /></a>
+        </div>
+        <div class="col-md-2"><a target="_blank" href="https://open.spotify.com/user/tgler0nl1tf271wn11l0n28mn"><img
+              class="logo"
+              src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyIDI0YzYuNjI0IDAgMTItNS4zNzYgMTItMTJzLTUuMzc2LTEyLTEyLTEyLTEyIDUuMzc2LTEyIDEyIDUuMzc2IDEyIDEyIDEyem00Ljg3Mi02LjM0NHYuMDAxYy0uODA3IDAtMy4zNTYtMi44MjgtMTAuNTItMS4zNi0uMTg5LjA0OS0uNDM2LjEyNi0uNTc2LjEyNi0uOTE1IDAtMS4wOS0xLjM2OS0uMTA2LTEuNTc4IDMuOTYzLS44NzUgOC4wMTMtLjc5OCAxMS40NjcgMS4yNjguODI0LjUyNi40NzQgMS41NDMtLjI2NSAxLjU0M3ptMS4zMDMtMy4xNzNjLS4xMTMtLjAzLS4wOC4wNjktLjU5Ny0uMjAzLTMuMDI1LTEuNzktNy41MzMtMi41MTItMTEuNTQ1LTEuNDIzLS4yMzIuMDYzLS4zNTguMTI2LS41NzYuMTI2LTEuMDcxIDAtMS4zNTUtMS42MTEtLjE4OC0xLjk0IDQuNzE2LTEuMzI1IDkuNzc1LS41NTIgMTMuMjk3IDEuNTQzLjM5Mi4yMzIuNTQ3LjUzMy41NDcuOTUzLS4wMDUuNTIyLS40MTEuOTQ0LS45MzguOTQ0em0tMTMuNjI3LTcuNDg1YzQuNTIzLTEuMzI0IDExLjM2OC0uOTA2IDE1LjYyNCAxLjU3OCAxLjA5MS42MjkuNjYyIDIuMjItLjQ5OCAyLjIybC0uMDAxLS4wMDFjLS4yNTIgMC0uNDA3LS4wNjMtLjYyNS0uMTg5LTMuNDQzLTIuMDU2LTkuNjA0LTIuNTQ5LTEzLjU5LTEuNDM2LS4xNzUuMDQ4LS4zOTMuMTI1LS42MjUuMTI1LS42MzkgMC0xLjEyNy0uNDk5LTEuMTI3LTEuMTQyIDAtLjY1Ny40MDctMS4wMjkuODQyLTEuMTU1eiIvPjwvc3ZnPg==" /></a>
+        </div>
+        <div class="col-md-2"><a target="_blank" href="https://soundcloud.com/ahmed-el-hindawi-889617811"><img
+              class="logo"
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9Ijk3Ljc1cHgiIGhlaWdodD0iOTcuNzVweCIgdmlld0JveD0iMCAwIDk3Ljc1IDk3Ljc1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5Ny43NSA5Ny43NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQoJPg0KPGc+DQoJPHBhdGggZD0iTTQ4Ljg3NSwwQzIxLjg4MywwLDAsMjEuODgyLDAsNDguODc1UzIxLjg4Myw5Ny43NSw0OC44NzUsOTcuNzVTOTcuNzUsNzUuODY4LDk3Ljc1LDQ4Ljg3NVM3NS44NjcsMCw0OC44NzUsMHoNCgkJIE03LjczOSw2Mi4xNzFDNy43MTIsNjIuMzY0LDcuNTczLDYyLjUsNy4zOTksNjIuNWMtMC4xNzUsMC0wLjMxNS0wLjEzNi0wLjMzOS0wLjMzMWwtMC42MjEtNC42MzNsMC42MjEtNC43MTMNCgkJYzAuMDIzLTAuMTk2LDAuMTY0LTAuMzMzLDAuMzM5LTAuMzMzYzAuMTc0LDAsMC4zMTMsMC4xMzYsMC4zNCwwLjMzbDAuNzM2LDQuNzE3TDcuNzM5LDYyLjE3MXogTTEwLjg5Myw2NC45OTENCgkJYy0wLjAzLDAuMi0wLjE3NiwwLjM0Mi0wLjM1NCwwLjM0MmMtMC4xOCwwLTAuMzI4LTAuMTQ0LTAuMzUzLTAuMzQzbC0wLjgzNC03LjQ1NGwwLjgzNC03LjYyMg0KCQljMC4wMjQtMC4xOTksMC4xNzMtMC4zNDQsMC4zNTMtMC4zNDRjMC4xNzksMCwwLjMyNCwwLjE0MSwwLjM1NCwwLjM0NGwwLjk0OCw3LjYyMkwxMC44OTMsNjQuOTkxeiBNMTQuMjk4LDY2LjI1Mg0KCQljLTAuMDI2LDAuMjQxLTAuMjA1LDAuNDE1LTAuNDI2LDAuNDE1Yy0wLjIyNCwwLTAuNDAyLTAuMTc0LTAuNDI1LTAuNDE3bC0wLjc5Mi04LjcxMmMwLDAsMC43OTItOS4wNDMsMC43OTItOS4wNDQNCgkJYzAuMDIyLTAuMjQxLDAuMjAxLTAuNDE2LDAuNDI1LTAuNDE2YzAuMjIxLDAsMC4zOTksMC4xNzUsMC40MjYsMC40MTZsMC44OTksOS4wNDRMMTQuMjk4LDY2LjI1MnogTTE3LjczMiw2Ni41MjkNCgkJYy0wLjAyNCwwLjI3Ny0wLjIzOCwwLjQ4OC0wLjQ5NywwLjQ4OGMtMC4yNjQsMC0wLjQ3OS0wLjIxMS0wLjUtMC40ODhsLTAuNzQ4LTguOTg5bDAuNzQ4LTkuMjkyYzAuMDIxLTAuMjgsMC4yMzYtMC40OSwwLjUtMC40OQ0KCQljMC4yNTksMCwwLjQ3MywwLjIxLDAuNDk3LDAuNDg3bDAuODUsOS4yOTRMMTcuNzMyLDY2LjUyOXogTTIxLjE5Myw2Ni42MDRjLTAuMDIxLDAuMzE4LTAuMjY4LDAuNTYyLTAuNTcsMC41NjINCgkJYy0wLjMwNSwwLTAuNTUxLTAuMjQzLTAuNTcxLTAuNTYybC0wLjcwNi05LjA2M2wwLjcwNi04LjYxOWMwLjAyMS0wLjMyMSwwLjI2Ny0wLjU2MywwLjU3MS0wLjU2M2MwLjMwMywwLDAuNTQ5LDAuMjQyLDAuNTcsMC41Ng0KCQlsMC44MDEsOC42MjNMMjEuMTkzLDY2LjYwNHogTTI0LjY4Miw2Ni42MDd2LTAuMDA0Yy0wLjAyMSwwLjM1NS0wLjMwMiwwLjYzNi0wLjY0MywwLjYzNmMtMC4zNDQsMC0wLjYyNS0wLjI4LTAuNjQ0LTAuNjM0DQoJCWwtMC42NjEtOS4wNjJsMC42NjEtMTQuMDI0YzAuMDE5LTAuMzU3LDAuMy0wLjYzNiwwLjY0NC0wLjYzNmMwLjM0MSwwLDAuNjIyLDAuMjc5LDAuNjQzLDAuNjM1bDAuNzUsMTQuMDI1TDI0LjY4Miw2Ni42MDd6DQoJCSBNMjguMTQ1LDY2LjZ2LTAuMDA1Yy0wLjAxOCwwLjM5OC0wLjMzMywwLjcwOC0wLjcxNiwwLjcwOGMtMC4zODQsMC0wLjY5OC0wLjMxLTAuNzEzLTAuNzA1bC0wLjYyMi05LjAwNw0KCQljMCwwLDAuNjE5LTE3LjIyOSwwLjYxOS0xNy4yM2MwLjAxOC0wLjM5NywwLjMzMi0wLjcwOCwwLjcxNi0wLjcwOGMwLjM4MywwLDAuNjk4LDAuMzExLDAuNzE2LDAuNzA4bDAuNzAxLDE3LjIzTDI4LjE0NSw2Ni42eg0KCQkgTTMxLjc0LDY2LjQ2MnYtMC4wMDVjLTAuMDE4LDAuNDM4LTAuMzYyLDAuNzc5LTAuNzg2LDAuNzc5Yy0wLjQyNywwLTAuNzczLTAuMzQyLTAuNzg4LTAuNzc1bC0wLjU3Ny04LjkxNA0KCQljMCwwLDAuNTc3LTE4LjY2NywwLjU3Ny0xOC42NjljMC4wMTUtMC40MzgsMC4zNjEtMC43ODEsMC43ODgtMC43ODFjMC40MjQsMCwwLjc2OSwwLjM0MywwLjc4NiwwLjc4MWwwLjY1MiwxOC42NjlMMzEuNzQsNjYuNDYyeg0KCQkgTTM1LjMxMSw2Ni40MDJjLTAuMDE0LDAuNDc4LTAuMzkzLDAuODUzLTAuODU5LDAuODUzYy0wLjQ3LDAtMC44NDYtMC4zNzUtMC44NTgtMC44NDlsLTAuNTM2LTguODU4bDAuNTM0LTE5LjI5Nw0KCQljMC4wMTUtMC40NzksMC4zOTEtMC44NTUsMC44Ni0wLjg1NWMwLjQ2NywwLDAuODQ2LDAuMzc1LDAuODU5LDAuODU1bDAuNjAzLDE5LjI5OEwzNS4zMTEsNjYuNDAyeiBNMzguOTA4LDY2LjMyNXYtMC4wMDcNCgkJYy0wLjAxNCwwLjUxOS0wLjQyMywwLjkyOS0wLjkzMiwwLjkyOWMtMC41MTEsMC0wLjkyLTAuNDEtMC45MzEtMC45MjRsLTAuNDkzLTguNzczbDAuNDktMTguODA1DQoJCWMwLjAxNC0wLjUyLDAuNDIzLTAuOTI3LDAuOTM0LTAuOTI3YzAuNTA5LDAsMC45MTgsMC40MDYsMC45MzIsMC45MjVsMC41NTUsMTguODA3TDM4LjkwOCw2Ni4zMjV6IE00Mi41MzQsNjYuMjd2LTAuMDA2DQoJCWMtMC4wMTEsMC41NjEtMC40NTMsMS0xLjAwNSwxYy0wLjU1MSwwLTAuOTk0LTAuNDM5LTEuMDA1LTAuOTk0bC0wLjQ0OS04LjcxOWwwLjQ0OS0xOC4xMTljMC4wMTEtMC41NjEsMC40NTQtMSwxLjAwNS0xDQoJCWMwLjU1MiwwLDAuOTk0LDAuNDQsMS4wMDUsMWwwLjUwMywxOC4xMjFMNDIuNTM0LDY2LjI3eiBNNDYuMjMyLDY1LjM1NGwtMC4wNDUsMC44NTRjLTAuMDA1LDAuMjk1LTAuMTMsMC41NjMtMC4zMjQsMC43NTgNCgkJYy0wLjE5NSwwLjE5My0wLjQ2MSwwLjMxNC0wLjc1MywwLjMxNGMtMC4zMjksMC0wLjYyNS0wLjE1Mi0wLjgyNC0wLjM5Yy0wLjE0Ni0wLjE3Ni0wLjIzOS0wLjM5OS0wLjI1LTAuNjQxDQoJCWMtMC4wMDItMC4wMTItMC4wMDMtMC4wMjMtMC4wMDMtMC4wMzdjMCwwLTAuNDA4LTguNjU0LTAuNDA4LTguNjY3bDAuNDA0LTIxLjM1MmwwLjAwNC0wLjIwM2MwLjAwNS0wLjM3NywwLjIwMi0wLjcwOCwwLjQ5Ny0wLjg5OQ0KCQljMC4xNjctMC4xMSwwLjM2NS0wLjE3NSwwLjU4LTAuMTc1YzAuMjE4LDAsMC40MjQsMC4wNjgsMC41OTUsMC4xODRjMC4yODUsMC4xOTMsMC40NzYsMC41MTksMC40ODIsMC44ODlsMC40NTIsMjEuNTYyDQoJCUw0Ni4yMzIsNjUuMzU0eiBNNDkuODI1LDY2LjA5MlY2Ni4wOXYtMC4wMDhjLTAuMDEzLDAuNjMxLTAuNTI1LDEuMTQ2LTEuMTUsMS4xNDZjLTAuNjI3LDAtMS4xNDMtMC41MTUtMS4xNTEtMS4xMzhsLTAuMjMyLTQuMjA5DQoJCWwtMC4yMzgtNC4zMjVsMC40NjktMjMuMzk3bDAuMDAyLTAuMTE4YzAuMDA0LTAuMzU2LDAuMTctMC42NzQsMC40MjctMC44ODVjMC4xOTctMC4xNjQsMC40NS0wLjI2MiwwLjcyNS0wLjI2Mg0KCQljMC4yMTQsMCwwLjQxNCwwLjA2MSwwLjU4NSwwLjE2NWMwLjMzLDAuMjAxLDAuNTU5LDAuNTY1LDAuNTY1LDAuOThsMC41MDksMjMuNTE4TDQ5LjgyNSw2Ni4wOTJ6IE04MC44NzIsNjcuMjUNCgkJYzAsMC0yOC45MDksMC4wMDMtMjguOTM3LDBjLTAuNjI1LTAuMDYyLTEuMTIxLTAuNTU5LTEuMTI3LTEuMTk4YzAsMCwwLTMzLjEzMSwwLTMzLjEzMmMwLjAwNi0wLjYwOSwwLjIxNS0wLjkyMiwxLjAwNC0xLjIyNw0KCQljMi4wMjUtMC43ODUsNC4zMjItMS4yNDgsNi42NzYtMS4yNDhjOS42MjcsMCwxNy41MTUsNy4zOCwxOC4zNDcsMTYuNzg3YzEuMjQyLTAuNTIsMi42MDYtMC44MSw0LjAzNy0wLjgxDQoJCWM1Ljc2NywwLDEwLjQzOCw0LjY3NCwxMC40MzgsMTAuNDM5QzkxLjMxMSw2Mi42MjYsODYuNjM5LDY3LjI1LDgwLjg3Miw2Ny4yNXoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" /></a>
+        </div>
+        <div class="col-md-2"><a target="_blank" href="https://t.me/hindawiii"><img class="logo"
+              src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyIDI0YzYuNjI5IDAgMTItNS4zNzEgMTItMTJzLTUuMzcxLTEyLTEyLTEyLTEyIDUuMzcxLTEyIDEyIDUuMzcxIDEyIDEyIDEyem0tNi41MDktMTIuMjYgMTEuNTctNC40NjFjLjUzNy0uMTk0IDEuMDA2LjEzMS44MzIuOTQzbC4wMDEtLjAwMS0xLjk3IDkuMjgxYy0uMTQ2LjY1OC0uNTM3LjgxOC0xLjA4NC41MDhsLTMtMi4yMTEtMS40NDcgMS4zOTRjLS4xNi4xNi0uMjk1LjI5NS0uNjA1LjI5NWwuMjEzLTMuMDUzIDUuNTYtNS4wMjNjLjI0Mi0uMjEzLS4wNTQtLjMzMy0uMzczLS4xMjFsLTYuODcxIDQuMzI2LTIuOTYyLS45MjRjLS42NDMtLjIwNC0uNjU3LS42NDMuMTM2LS45NTN6Ii8+PC9zdmc+" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feature gradient">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f4d9e7" fill-opacity="1"
+        d="M0,128L48,154.7C96,181,192,235,288,250.7C384,267,480,245,576,202.7C672,160,768,96,864,106.7C960,117,1056,203,1152,218.7C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <div class="row justify-content-center align-items-center" id="me">
+        <div class="col-md-6">
+          <img src="./imgs/seo_monochromatic.svg" alt="">
+        </div>
+        <div class="col-md-6" id="details">
+          <h1 class="my-3">Who am I ?</h1>
+          <p class="my-4">I study Computer Engineering and Web Development at Mansoura University. I'm looking forward
+            to improve my skills with Front-end projects. I really love this field, So you will find me working with alot of joy and creativity at the same time with a lot of youthful enthusiasm.</p>
+          <ul>
+            <li>Creative design</li>
+            <li>Super responsive</li>
+            <li>Acurate</li>
+            <li>Cheap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f4d9e7" fill-opacity="1"
+        d="M0,128L48,154.7C96,181,192,235,288,250.7C384,267,480,245,576,202.7C672,160,768,96,864,106.7C960,117,1056,203,1152,218.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <section class="icons">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="icon gradient mb-4">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lightning" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
+            </svg>
+          </div>
+          <h3>Fast work</h3>
+          <p>I do my tasks at the shrotest distace and the perfect output</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon gradient mb-4">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
+              <path fill-rule="evenodd"
+                d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+            </svg>
+          </div>
+          <h3>Always Available</h3>
+          <p>I work for 6 hours every day, So I'm always there for you.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon gradient mb-4">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookshelf" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M2.5 0a.5.5 0 0 1 .5.5V2h10V.5a.5.5 0 0 1 1 0v15a.5.5 0 0 1-1 0V15H3v.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zM3 14h10v-3H3v3zm0-4h10V7H3v3zm0-4h10V3H3v3z" />
+            </svg>
+          </div>
+          <h3>Good Listener</h3>
+          <p>I will hear what you want to do with your project and we will be together step by step for adjustments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery gradient" id="gallery">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+      <path fill="#f4d9e7" fill-opacity="1"
+        d="M0,128L48,122.7C96,117,192,107,288,106.7C384,107,480,117,576,128C672,139,768,149,864,154.7C960,160,1056,160,1152,149.3C1248,139,1344,117,1392,106.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <h1>Check my wholesome pictures</h1>
+          <p>these are photos of me when Iwas alive and healthy, No judjments please.</p>
+        </div>
+      </div>
+      <div class="row my-3 g-3">
+        <div class="col-md-4"><img src="./imgs/me/2.jpg" alt="Gallery image" class="img-fluid me"></div>
+        <div class="col-md-4"><img src="./imgs/me/3.jpg" alt="Gallery image" class="img-fluid me"></div>
+        <div class="col-md-4"><img src="./imgs/me/4.jpg" alt="Gallery image" class="img-fluid me"></div>
+      </div>
+      <div class="row mt-5 justify-content-end">
+        <div class="col-md-2">
+          <button type="button" class="btn btn-outline-dark" onclick="noMore()">Show more</button>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f4d9e7" fill-opacity="1"
+        d="M0,128L48,122.7C96,117,192,107,288,106.7C384,107,480,117,576,128C672,139,768,149,864,154.7C960,160,1056,160,1152,149.3C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+
+    <section class="services gradient">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f4d9e7" fill-opacity="1"
+          d="M0,96L48,101.3C96,107,192,117,288,149.3C384,181,480,235,576,213.3C672,192,768,96,864,85.3C960,75,1056,149,1152,160C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+      </svg>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <h1>I Code</h1>
+            <p>I practise coding for 3 years now, And I think I'm skilled enough now to participate in big projects. <br> P. S. I've contributed in many source code projects in github
+            </p>
+          </div>
+          <div class="col-md-5"><img src="./imgs/coding_.svg" alt="" class="img-fluid"></div>
+          <div class="col-md-5"><img src="./imgs/marketing.svg" alt="" class="img-fluid"></div>
+          <div class="col-md-5">
+            <h1>I Produce</h1>
+            <p>I will give you a product that you can sell easilly cause it's a high quality product</p>
+          </div>
+          <div class="col-md-5">
+            <h1>What's a Responsive design?</h1>
+            <p>I have the ability to create a web page that runs in any device correctly by resizing its dimension based on the device dimensions </p>
+          </div>
+          <div class="col-md-5"><img src="./imgs/revenue_.svg" class="img-fluid" alt=""></div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f4d9e7" fill-opacity="1"
+          d="M0,96L48,101.3C96,107,192,117,288,149.3C384,181,480,235,576,213.3C672,192,768,96,864,85.3C960,75,1056,149,1152,160C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="warning">
+          <h1>WARNING !!!</h1>
+          <h2 class="justify-content-center align-items-centre-center">THIS SECTION IS NOT DEVELOPED YET .</h2>
+        </div>
+        <div class="row justify-content-center align-items-center">
+
+          <div class="col-md-5">
+
+            <h1>Contact me:</h1>
+            <div class="mb-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. Ahmed">
+                </div>
+                <div class="col-md-6">
+                  <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. El-Hindawi">
+                </div>
+              </div> -->
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Send E-mail</button>
+          </div>
+          <div class="col-md-5">
+            <img src="./handshake.svg" alt="" class="iconic">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container-fluid text-center">
+        <span>Made by <span>Ahmed El-Hindawi</span> with bootstrap 5 ©</span>
+      </div>
+    </section>
+
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./script.js"></script>
+
+
+</html>
